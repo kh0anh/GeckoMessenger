@@ -1,9 +1,10 @@
-# Thư mục biên dịch tạm thời
-bin/
-obj/
-out/
+# Build outputs
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Oo]ut/
 
-# File Visual Studio
+# Visual Studio
 .vs/
 *.suo
 *.user
@@ -16,20 +17,67 @@ out/
 *.ncb
 *.opendb
 *.sdf
+*.VC.db
+*.VC.VC.opendb
 
-# File log
+# Rider / VS Code
+.idea/
+.vscode/
+
+# User-specific files
+*.userprefs
+*.rsuser
+*.pidb
+*.svclog
+*.scc
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+.nuget/NuGet.Config
+.nuget/NuGet.exe
+
+# .NET Core/SDK
+project.lock.json
+project.assets.json
+*.deps.json
+
+# Build artifacts
+*.pdb
+*.mdb
+*.idb
+*.obj
+*.iobj
+*.ipdb
+*.dll
+*.exe
+*.appx
+*.appxbundle
+*.msi
+*.msix
+*.msixbundle
+
+# Logs
 *.log
 *.tlog
 *.log.*
 
-# Kết quả test
+# Test results
 TestResults/
 *.trx
 
-# File lock của .NET
-project.lock.json
-project.assets.json
-source/.vs/GeckoMessenger/CopilotIndices/17.13.431.34963/CodeChunks.db
-source/.vs/GeckoMessenger/CopilotIndices/17.13.431.34963/SemanticSymbols.db
-source/Messenger/obj/Debug/Messenger_MarkupCompile.i.cache
-*.cache
+# Coverage
+*.coverage
+*.coveragexml
+coverage/
+
+# Temp
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
